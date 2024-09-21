@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class='bx bx-x' onclick="closemenu()"></i>
+        </ul>
+        <i class='bx bx-menu' onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        
+        <h1>Hi, I'm <br><span>Hema</span> Kattumenu.</h1>
+        <p>Web Developer</p>
+        <a href="images/portfolio-resume.pdf" download class="btn btn3">Download CV</a>
+      </div>
+    </div>
+  </div>
+  <!--------about---- ----->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/my picture.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title"><span style="color: #12063b;">About</span> Me</h1>
+          <p class="des">I am an aspiring Frontend developer, looking for an  entry-level position as a Frontend developer to kickstart my career in the tech industry.
+            I am a hard working individual, quick learner and always eager to learn things. I am actively seeking opportunities to gain real-time project experience to enhance my skills further and contribute to impactful projects.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Frontend Development</span><br>HTML, CSS(BootStrap), JavaScript, React.js</li>
+              <li><span>Backend Development(Basic)</span><br>Node.js, Express.js</li>
+              <li><span>Programming Languges</span><br>Java </li>
+              <li><span>Tools</span><br>VS code, npm</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="certifications">
+            <ul>
+              <li><span>Fullstack development</span><br>issued by DataValley - apr 2024</li>
+              <li><span>Hands on java programming</span><br>issued by Frontlines Edutech - oct 2022</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Bachelor of Technology in Electronics and communications</span><br>BVC Engineering College, odalarevu(AP)<br>
+              2020-2024<br>
+            CGPA - 8.35</li>
+            </ul>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---------portfolio------->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="subtitle"><span style="color: #12063b;">My</span> Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work2.jpg">
+          <div class="layer">
+            <h3>A Drum Kit</h3>
+            <p>An interactive drumkit website that allows users to play different sounds by clicking buttons or using keyboard keys.
+              Technologies used-HTML,CSS,Javascript.
+            </p>
+            <a href="https://hemakattumenu.github.io/DrumKit/"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <div class="work">
+          <img src="images/work3.jpg">
+          <div class="layer">
+          <h3>Youtube Clone</h3>
+          <p>A frontend clone of youtube, focusing on replicating the user interface and layout.
+            Technologies used-HTML,CSS.
+          </p>
+          <a href="https://hemakattumenu.github.io/youtube-clone/"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+        
+        <div class="work">
+          <img src="images/work1.jpg">
+          <div class="layer">
+            <h3>Amazon clone</h3>
+            <p>A functional clone of Amazon website, designed to simulate e-commerce features such as product listing,shopping cart functionality and order tracking.
+              Technologies used-HTML,CSS, JavaScript.
+            </p>
+            <a href="https://www.linkedin.com/posts/hema-kattumenu-71a600252_webdevelopment-html-css-activity-7242755495516610560-cHi3?utm_source=share&utm_medium=member_android"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+      </div>
+      <a href="https://github.com/hemakattumenu" class="btn">See more</a>
+    </div>
+  </div>
+<!-------------contact--------->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title"><span style="color: #12063b;">Contact</span> Me</h1>
+          <p><i class='bx bxs-paper-plane'></i>hemakattumenu@gmail.com</p>
+          <p><i class='bx bxs-phone'></i>+91 73307 23543</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/hema-kattumenu-71a600252"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="https://github.com/hemakattumenu"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/hema_kattumenu?igsh=MnZvdjhmZ2FoYW9w"><i class='bx bxl-instagram' ></i></a>
+            <a><i class='bx bxl-facebook-square' ></i></a>
+          </div>
+          <a href="/images/portfolio-resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2" >Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright @ made with <i class='bx bxs-heart'></i> by Hema Kattumenu</p>
+    </div>
+  </div>
+
+  <script src="index.js"> </script>
+</body>
+</html> 
